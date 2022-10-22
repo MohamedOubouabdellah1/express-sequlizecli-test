@@ -1,0 +1,23 @@
+{
+    "development": {
+        "database": "wishlist_api_development",
+        "dialect": "postgres",
+        "username":"postgres",
+        "password": "123"
+    },
+    "test": {
+        "database": "wishlist_api_test",
+        "dialect": "postgres",
+        "username":"postgres",
+        "password": "123"
+    },
+    "production": {
+        "use_env_variable": "DATABASE_URL",
+        "dialect": "postgres",
+        "dialectOptions": {
+            "ssl": {
+                "rejectUnauthorized": false
+            }
+        }
+    }
+}
